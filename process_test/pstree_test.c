@@ -16,7 +16,7 @@ int main(int argc,char const* argv[]){
     }else if(pid == 0){
         //新学生
         char* new_name = "ergou";
-        char* args[]={"/home/lst/process_test/erlou",new_name,NULL};
+        char* args[]={"/home/lst/Linux/process_test/erlou",new_name,NULL};
         char* envs[]={NULL};
         int exR=execve(args[0],args,envs);
         if(exR==-1){

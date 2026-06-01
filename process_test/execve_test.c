@@ -21,7 +21,7 @@ int main(int argc, char *argv[]){
      * 跳转前后只有进程号不变，其他参数都被新程序替换掉了
      * int execve(const char *pathname, char *const argv[], char *const envp[]);
      */
-    char* args[] = {"/home/lst/process_test/erlou",name, NULL}; //argv数组
+    char* args[] = {"/home/lst/Linux/process_test/erlou",name, NULL}; //argv数组
     char* envs[] = {"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin", NULL}; //环境变量数组
      int re=execve(args[0], args, envs);
      if(re==-1){
