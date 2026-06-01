@@ -71,3 +71,8 @@ fifo_write: fifo_write.c
 
 fifo_read: fifo_read.c
 	-$(CC) -o $@ $^
+
+shared_memory: shared_memory.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
