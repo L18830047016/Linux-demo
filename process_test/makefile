@@ -76,3 +76,8 @@ shared_memory: shared_memory.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+shared_memory_block: shared_memory_block.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
