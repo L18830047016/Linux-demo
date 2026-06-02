@@ -6,6 +6,7 @@
 void sigint_handler(int signum){
     printf("\n收到%d信号，停止程序\n",signum);
     exit(signum);
+    
 }
 
 int main(int argc, char const *argv[])
