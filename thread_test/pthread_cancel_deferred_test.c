@@ -5,6 +5,7 @@
 
 void* task(void* arg){
     printf("thread strated\n");
+    
     //默认取消类型是延迟
     printf("working..\n");
     sleep(2);
