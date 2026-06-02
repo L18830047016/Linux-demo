@@ -29,3 +29,7 @@ pthread_cancel_disable: pthread_cancel_disable_test.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+race_condition: race_condition_test.c
+	-$(CC) -o $@ $^
+	-./$@
