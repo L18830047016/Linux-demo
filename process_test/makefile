@@ -92,3 +92,9 @@ producer: producer.c
 	
 consumer: consumer.c
 	-$(CC) -o $@ $^
+
+
+signal: signal_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
