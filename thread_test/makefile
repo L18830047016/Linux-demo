@@ -44,3 +44,13 @@ rwlock_test_writer_unlock: rwlock_test_writer_unlock.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+rwlock: rwlock_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+rwlock_rw_alternate: rwlock_rw_alternate.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
