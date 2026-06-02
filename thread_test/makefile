@@ -19,3 +19,8 @@ pthread_cancel_deferred: pthread_cancel_deferred_test.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+pthread_cancel_async: pthread_cancel_async_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
