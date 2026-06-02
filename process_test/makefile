@@ -86,3 +86,9 @@ father_son_mq: father_son_mq_test.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+producer: producer.c
+	-$(CC) -o $@ $^
+	
+consumer: consumer.c
+	-$(CC) -o $@ $^
