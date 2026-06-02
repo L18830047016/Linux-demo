@@ -5,7 +5,7 @@
 
 #define THREAD_COUNT 20000
 
-//初始化锁(静态锁)
+//初始化锁(静态锁：无需手动摧毁)
 static pthread_mutex_t counter_mutex = PTHREAD_MUTEX_INITIALIZER;
 
 //需要创建的多个线程
