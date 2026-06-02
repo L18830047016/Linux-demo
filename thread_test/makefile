@@ -14,3 +14,8 @@ pthread_detach: pthread_detach_test.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+pthread_cancel_deferred: pthread_cancel_deferred_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
