@@ -64,3 +64,8 @@ condition_var: condition_var.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+condition_var_copy: condition_var_copy.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
