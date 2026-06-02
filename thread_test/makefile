@@ -59,3 +59,8 @@ rwlock_hungry_solved: rwlock_hungry_solved.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+condition_var: condition_var.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
