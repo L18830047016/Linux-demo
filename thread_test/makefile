@@ -24,3 +24,8 @@ pthread_cancel_async: pthread_cancel_async_test.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+pthread_cancel_disable: pthread_cancel_disable_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
