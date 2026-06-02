@@ -54,3 +54,8 @@ rwlock_rw_alternate: rwlock_rw_alternate.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+rwlock_write_hungry: rwlock_write_hungry.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
