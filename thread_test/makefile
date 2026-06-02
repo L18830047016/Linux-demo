@@ -33,3 +33,8 @@ pthread_cancel_disable: pthread_cancel_disable_test.c
 race_condition: race_condition_test.c
 	-$(CC) -o $@ $^
 	-./$@
+
+counter_mutex: counter_mutex_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
