@@ -7,9 +7,10 @@
 int main(){
     pid_t son_pid=fork();
 
+    //父子进程都执行
     //允许手动调用setpgid给每个进程设置自定义的组id
     setpgid(getpid(),getpid());
-    
+
     if(son_pid>0){
         waitpid(son_pid,NULL,0);
     }else if(son_pid==0){
