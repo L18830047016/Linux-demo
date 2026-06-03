@@ -15,3 +15,6 @@ process_group_block: process_group_block_test.c
 
 process_group_father_son: process_group_father_son_test.c
 	-$(CC) -o $@ $^
+
+process_group_two_group: process_group_two_group.c
+	-$(CC) -o $@ $^
