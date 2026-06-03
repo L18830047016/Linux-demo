@@ -69,3 +69,8 @@ condition_var_copy: condition_var_copy.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+unnamed_sem_bin_thread: unnamed_sem_bin_thread.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
