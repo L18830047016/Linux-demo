@@ -79,3 +79,8 @@ unnamed_sem_bin_process_condition: unnamed_sem_bin_process_condition.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+unnamed_sem_bin_process: unnamed_sem_bin_process.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
