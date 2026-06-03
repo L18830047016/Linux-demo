@@ -12,3 +12,6 @@ execve_invalid_path: execve_invalid_path.c
 
 process_group_block: process_group_block_test.c
 	-$(CC) -o $@ $^
+
+process_group_father_son: process_group_father_son_test.c
+	-$(CC) -o $@ $^
