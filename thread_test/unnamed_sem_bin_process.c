@@ -1,3 +1,5 @@
+//信号量必须创建在共享内存里面，以确保多个进程都能访问，不能初始化，创建在进程里面，否则没效果
+
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
