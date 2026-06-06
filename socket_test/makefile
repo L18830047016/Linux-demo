@@ -20,3 +20,9 @@ without_buf_test: without_buf_test.c
 	-$(CC) -o $@ $^
 	-./$@
 	-rm ./$@
+
+multi_conn_threads_client: multi_conn_threads_client.c
+	-$(CC) -o $@ $^
+
+multi_conn_threads_server: multi_conn_threads_server.c
+	-$(CC) -o $@ $^
