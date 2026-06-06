@@ -31,3 +31,6 @@ udp_client: udp_client.c
 	-$(CC) -o $@ $^
 udp_server: udp_server.c
 	-$(CC) -o $@ $^
+
+socket_ipc: socket_ipc_test.c
+	-$(CC) -o $@ $^
