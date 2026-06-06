@@ -26,3 +26,9 @@ multi_conn_threads_client: multi_conn_threads_client.c
 
 multi_conn_threads_server: multi_conn_threads_server.c
 	-$(CC) -o $@ $^
+
+multi_conn_processes_client: multi_conn_processes_client.c
+	-$(CC) -o $@ $^
+
+multi_conn_processes_server: multi_conn_processes_server.c
+	-$(CC) -o $@ $^
